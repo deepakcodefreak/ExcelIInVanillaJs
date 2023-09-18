@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page-actions-container">
+        <div class="page-action">Home</div>
+        <div class="page-action">File</div>
+        <div class="page-action">Insert</div>
+        <div class="page-action">Layout</div>
+        <div class="page-action">Help</div>
+    </div>
+    <div class="cellprops-actions-container">
+        <span class="material-symbols-outlined copy">
+            content_copy
+        </span>
+        <span class="material-symbols-outlined cut">
+            content_cut
+        </span>
+        <span class="material-symbols-outlined paste">
+            content_paste
+        </span>
+        <select name="font-family" id="font-family" class="font-family">
+            <option value="monospace">Monospace</option>
+            <option value="sans-serif">Sans Serif</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="cursive">Cursive</option>
+        </select>
+        <select name="font-size" id="font-size" class="font-size">
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="24">24</option>
+        </select>
+        <span class="material-symbols-outlined bold">
+            format_bold
+        </span>
+        <span class="material-symbols-outlined italic">
+            format_italic
+        </span>
+        <span class="material-symbols-outlined underline">
+            format_underlined
+        </span>
+        <span class="material-symbols-outlined allignment" data-value="left">
+            format_align_left
+        </span>
+        <span class="material-symbols-outlined allignment" data-value="center">
+            format_align_center
+        </span>
+        <span class="material-symbols-outlined allignment" data-value="right">
+            format_align_right
+        </span>
+        <button class="text-color">
+            <span class="material-symbols-outlined">
+                format_color_text
+            </span>
+            <input type="color" class="font-color-prop" />
+        </button>
+        <button class="bg-color">
+            <span class="material-symbols-outlined">
+                format_color_fill
+            </span>
+            <input type="color" class="bg-color-prop" />
+        </button>
+        <span class="material-symbols-outlined download">
+            cloud_download
+        </span>
+        <span class="material-symbols-outlined upload">
+            cloud_upload
+        </span>
+    </div>
+    <div class="formula-actions-container">
+        <input type="text" class="address-bar" readonly>
+        <img width="25" height="25" src="https://img.icons8.com/ios/50/formula-fx.png" alt="formula-fx" />
+        <input type="text" class="formula-bar">
+    </div>
+    <div class="grid-container">
+        <div class="dummy-cell-and-cols-address">
+            <div class="grid-dummy-cell"></div>
+            <div class="address-rows-container" id="address-rows-container">
+
+            </div>
+        </div>
+        <div class="address-cols-container-and-grid-cells">
+            <div class="address-cols-container" id="address-cols-container"></div>
+            <div class="grid-cells"></div>
+        </div>
+    </div>
+    <div class="sheets-action-container">
+        <button class="sheet-add-icon">
+            <span class="material-symbols-outlined">
+                post_add
+            </span>
+        </button>
+        <div class="sheets-folder-container">
+            <!-- <div class="sheet-folder">
+                <div id="0" class="sheet-content">
+                    Sheet 1
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <script src="./grid.js"></script>
+    <script src="./cycle-validation.js"></script>
+    <script src="./sheets-handling.js"></script>
+    <script src="./cell-properties.js"></script>
+    <script src="./cyclic-path-trace.js"></script>
+    <script src="./formula.js"></script>
+    <script src="./cut-copy-paste.js"></script>
+    <script src="./open-save.js"></script>
+</body>
+
+</html>
